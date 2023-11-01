@@ -25,6 +25,7 @@ def decode(pw):
 
 
 def main():
+    # hi
     while True:
         print("""Menu
 -------------
