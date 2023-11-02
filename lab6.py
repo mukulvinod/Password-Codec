@@ -11,17 +11,18 @@ def encode(pw):
 
     return encoded
 
-def decode(pw):
-    decoded = ""
+#Tarik's contribution
+def decode(password):
+    decoded_pass = '' #Empty string
 
-    for i in range(len(pw)):
-        sub = int(pw[i]) - 3
-        if (sub) < 1:
-            sub += 10
+    for i in range(len(password)): #Goes through every number in the range of the password
+        sub_three = int(password[i]) - 3 #Subtracts 3 from the digit stored in i
+        if (sub_three) < 1:
+            sub_three += 10 #If the result of the subtraction is negative, it adds ten to it
 
-        decoded += str(sub)
+        decoded_pass += str(sub_three) #Adds the result to the empty variable
 
-    return decoded
+    return decoded_pass
 
 
 def main():
