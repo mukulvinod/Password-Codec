@@ -11,7 +11,6 @@ def encode(pw):
 
     return encoded
 
-#Tarik's contribution
 def decode(password):
     decoded_pass = '' #Empty string
 
